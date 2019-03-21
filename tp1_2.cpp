@@ -4,6 +4,7 @@
 int cuadrado(int a);
 void cuadrado2(int a);
 void invertir(int a, int b);
+void ordenar(int a, int b);
 
 int main(void) 
 {
@@ -25,7 +26,7 @@ int main(void)
 	scanf("%d",&b);
 	
 	invertir(a,b);
-
+	ordenar(a,b);
 	return 0;
 } 
 
@@ -47,4 +48,18 @@ void invertir(int a, int b)
 	b=c;
 	printf("a = %d\n",a);
 	printf("b = %d\n",b);
+}
+
+void ordenar(int a, int b)
+{
+	int aux;
+	if(b<a)
+	{
+		printf("Numeros ordenados: %i - %i",b,a);
+	}
+	else
+	{
+		printf("Numeros ordenados: %i - %i",a,b);
+
+	}
 }
